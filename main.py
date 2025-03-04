@@ -29,9 +29,6 @@ def generate_report(words: int, counts: object):
 def main():
   with open('./books/frankenstein.txt') as f:
     file_contents = f.read()
-    # print(file_contents)
-    # print(count_words(file_contents))
-    # print(count_chars(file_contents))
     print(generate_report(count_words(file_contents),count_chars(file_contents)))
 
 main()
